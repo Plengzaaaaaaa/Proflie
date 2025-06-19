@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";//cssที่เราเขียนเอง อยู่ในglobals
-import Header from "./component/Header";
-import Footer from "./component/Footer";
+import Header from "@/component/Header";
+import Footer from "@/component/Footer";
+import Navbar from "@/component/์Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header/>
-
+        <Navbar/>
         {children}
         <Footer /> 
       </body>
