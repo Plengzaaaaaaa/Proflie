@@ -1,0 +1,8 @@
+export default function Footer() {
+    return (
+    <footer className="bg-gray-200 text-center p-4">
+    <p>&copy; 2025 MyApp. All rights reserved.</p>
+    </footer>
+    );
+   } 
+   
